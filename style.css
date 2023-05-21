@@ -1,7 +1,7 @@
 html{
     width: 100%;
     height: 100%;
-    background: linear-gradient(325deg,#79d345 40%, #3868ec 80%, #fdfaef 100% );
+    background: linear-gradient(325deg,#79d345 40%, #3868ec 80%,black 100%, #fdfaef 100% );
     font-family: Arial, Helvetica, sans-serif;
 }
 .game{
@@ -25,3 +25,37 @@ button{
     font-size: 30pt;
     font-weight: bold;
 }
+.disable{
+    color: grey;
+}
+.stats{
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.board-container{
+    position: relative;
+}
+.board, .win{
+    border-radius: 5px;
+    box-shadow: 0 25px 50px black / 25%;
+    background: linear-gradient(135deg, #79d345 0%, #3868ec 0%,black 50%, #fdfaef 100%);
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+.board{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 20px;
+}
+.board-container.flippedd .win{
+    transform: rotateY(0) rotateZ(0);
+}
+.card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
