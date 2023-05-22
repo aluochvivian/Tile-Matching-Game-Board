@@ -82,3 +82,62 @@ const flipBackcards = () => {
     });
     state.flippedCards = 0;
 }
+
+const flipCard = card => {
+    state.flippedCards++;
+    state.totalFlips++;
+
+    if (!state.gameStarted){
+        startGame()
+    }
+    if(state.flippedCards <= 2){
+        card.classList.add('flipped')
+    }
+    if(state.flippedCards === 2){
+        const flippedCards = document.querySelectorAll('.flipped:not(.matched)');
+        if(flippedCards[0].innerText === flippedCards[1].innerText){
+            flippedCards[0].classList.add('.matched');
+            flippedCards[1].classList.add('.matched');
+        }
+        
+        setTimeout(() => {
+               flipBackcards()
+    }, 1000)
+
+    }
+
+if(!document.querySelectorAll('.card:not(flipped)').length) {
+    setTimeout(() => {
+         selectors.boardContainer.classList.add('flipped')
+         selectors.win.innerHTML = `
+             <span class="win-text">
+             You won!<br />
+             with <span class="highlight">${state.totalFlips}</span>
+             moves<br />
+             under <span class="highlight">${state.totalTime}</span>
+             seconds
+        </span>
+
+         `
+
+         clearInterval(satte.loop)
+   }, 1000)
+ }
+}
+
+const attachEventListeners = () => {
+    document.addEventListener('click',event => {
+         const eventTarget = event.target;
+         const eventParent = eventTarget.parentElement;
+        
+         if(eventTarget.className.includes('cards') && !eventParent.className.
+         includes('flipped')){
+            flipCard(eventParent)
+         }else if(eventTarget.nodeName === 'BUTTON' && !eventTarget.className.
+         includes('disabled')){
+            startGame();
+         }
+
+        })
+    
+}
