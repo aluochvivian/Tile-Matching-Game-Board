@@ -21,6 +21,6 @@ const shuffle = array => {
         const randomIndex = Math.floor(Math.random() * (i + 1));
         const original = clonedArray[i];
 
-        clonedArray{i}
+        clonedArray
     }
 }
