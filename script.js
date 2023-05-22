@@ -63,3 +63,22 @@ const generateGame = () => {
     selectors.board.replaceWith(parser.querySelector('.board'))
 };
 
+const startGame = () => {
+    state.gameStarted = true;
+    selectors.start.classList.add('disabled');
+
+    state.loop = setInterval(() => {
+        state.totalTime++;
+
+        selectors.moves.innerText = `${state.totalFlips} moves`;
+        selectors.timer.innerText = `Time: ${state.totalTime} sec`
+}, 1000)
+
+}
+const flipBackcards = () => {
+    document.querySelectorAll('.card:not(matched)').forEach(card => {
+        card.classList.remove('.flipped');
+        
+    });
+    state.flippedCards = 0;
+}
