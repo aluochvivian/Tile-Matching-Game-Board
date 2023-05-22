@@ -46,7 +46,7 @@ button{
 .board{
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(4,auto);
     grid-gap: 20px;
 }
 .board-container.flippedd .win{
