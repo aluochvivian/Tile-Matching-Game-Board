@@ -4,7 +4,7 @@
 # The Creator
 ### Vivian Aluoch
 
-## Project Descripio
+## Project Descripion
 This project is a game board for having fun and make you become a critical thinker
 
 ### steps to visit my website
