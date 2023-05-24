@@ -11,8 +11,9 @@ This project is a game board for having fun and make you become a critical think
 git clone git@github.com:aluochvivian/Tile-Matching-Game-Board.git git init git add git commit -m "initial message" git push origin main
 
 
-#### link to my live
-https://aluochvivian.github.io/Tile-Matching-Game-Board/
+#### link to my sketch
+![GameBord](https://github.com/aluochvivian/Tile-Matching-Game-Board/assets/99467860/9b93049e-b3fe-4b51-89a5-f0fe966ec6ac)
+
 
 Licence MIT licence Copyright (c) 2023 Vivian Aluoch
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
