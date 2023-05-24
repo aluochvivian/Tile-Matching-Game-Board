@@ -11,7 +11,7 @@ This project is a game board for having fun and make you become a critical think
 git clone git@github.com:aluochvivian/Tile-Matching-Game-Board.git git init git add git commit -m "initial message" git push origin main
 
 
-#### link to my sketch
+#### My sketch
 ![GameBord](https://github.com/aluochvivian/Tile-Matching-Game-Board/assets/99467860/9b93049e-b3fe-4b51-89a5-f0fe966ec6ac)
 
 
